@@ -1,0 +1,1 @@
+# null-resource-using-registry--1
