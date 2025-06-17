@@ -4,3 +4,9 @@ module "nullresource--1" {
 source = "git::ssh://git@github.com/abhinav-tripathi14/terraform-aws-nullresource--1.git?ref=8fa8678b5108b876aae8cf7eee7cb8fe39daa145"
 #version = "1.0.1"
 }
+
+resource "null_resource" "test"{
+provisioner "local-exec" {
+    command = "aws --version"
+  }
+}
