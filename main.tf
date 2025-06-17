@@ -5,8 +5,3 @@ source = "git::ssh://git@github.com/abhinav-tripathi14/terraform-aws-nullresourc
 #version = "1.0.1"
 }
 
-resource "null_resource" "test"{
-provisioner "local-exec" {
-    command = "aws --version"
-  }
-}
