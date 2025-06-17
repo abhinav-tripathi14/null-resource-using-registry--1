@@ -4,6 +4,6 @@ module "nullresource--2" {
 }
 resource "null_resource""test"{
  provisioner "local-exec" {
-command = "bash ${path.root}/scripts/sync-all-appsets.sh"
+command = "bash ${path.root}/scripts/test.sh"
 }
 }
